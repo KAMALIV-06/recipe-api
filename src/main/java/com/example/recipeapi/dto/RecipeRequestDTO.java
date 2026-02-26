@@ -11,17 +11,19 @@ import lombok.*;
 @AllArgsConstructor
 public class RecipeRequestDTO {
 
+    @NotBlank(message = "Title is required")
     private String title;
 
+    @NotBlank(message = "Cuisine is required")
     private String cuisine;
 
     private Float rating;
 
-
+    @NotNull(message = "Prep time is required")
     @JsonProperty("prep_time")
     private Integer prepTime;
 
-
+    @NotNull(message = "Cook time is required")
     @JsonProperty("cook_time")
     private Integer cookTime;
 
@@ -31,5 +33,3 @@ public class RecipeRequestDTO {
 
     private String serves;
 }
-
-
