@@ -18,7 +18,7 @@ The application is built using Spring Boot with a clean layered architecture and
 
 ---
 # GIT REPO LINK: 
-
+https://github.com/KAMALIV-06/recipe-api.git
 ## Project Overview
 
 The project performs two major operations:
